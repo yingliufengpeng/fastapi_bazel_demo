@@ -1,0 +1,13 @@
+.clwb/
+bazel-bin
+bazel-demo2
+bazel-out
+bazel-testlogs
+
+**/__pycache__/
+bazel-bazel_project1/
+bazel-bazel_project2
+bazel-fastapi_bazel_demo
+.ijwb/
+
+MODULE.bazel.lock
