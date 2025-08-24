@@ -8,12 +8,12 @@ compile_pip_requirements(
     requirements_txt = "requirements_lock.txt",  # 输出文件，锁定所有依赖版本
 )
 #
-#py_binary(
-#    name = "fastapi_app",
-#    srcs = ["main.py"],
-#    deps = [
-#        #        "@pypi//:fastapi",
-#        #        "@pypi//:uvicorn",
-#        # Add any other internal Python library dependencies here
-#    ],
-#)
+py_binary(
+    name = "fastapi_app",
+    srcs = ["fastapi_app.py"],
+    deps = [
+                "@pypi//fastapi",
+                "@pypi//uvicorn",
+        # Add any other internal Python library dependencies here
+    ],
+)

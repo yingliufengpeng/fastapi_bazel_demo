@@ -14,8 +14,8 @@ py_repositories()
 
 # Register Python toolchain
 python_register_toolchains(
-    name = "python3_9",
-    python_version = "3.9",  # Match your existing Python environment
+    name = "python3_10",
+    python_version = "3.10",  # Match your existing Python environment
 )
 
 load("@rules_python//python:pip.bzl", "pip_parse")
